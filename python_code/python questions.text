@@ -1,0 +1,1061 @@
+'''
+Python Programming Coding Questions on Numbers
+Q1). Write a program to reverse an integer in Python
+Q2). Write a program in Python to check whether an integer is Armstrong number or not.
+Q3). Write a program in Python to check given number is prime or not.
+Q4). Write a program in Python to print the Fibonacci series using iterative method.
+Q5). Write a program in Python to print the fibonacci series using recursive method.
+Q6). Write a program in Python to check whether a number is palindrome or not using iterative method.
+Q7). Write a program in Python to check whether a number is palindrom or not using recursive method.
+Q8). Write a program in Python to find greatest among three integers.
+Q9). Write a program in Python to check if a number is binary?
+Q10). Write a program in Python to find sum of digits of a number using recursion?
+Q11). Write a program in Python to swap two numbers without using third variable?
+Q12). Write a program in Python to swap two numbers using third variable?
+Q13). Write a program in Python to find prime factors of a given integer.
+Q14). Write a program in Python to add two integer without using arithmetic operator?
+Q15). Write a program in Python to find given number is perfect or not?
+Python Programming Coding Questions on String
+Q1). Write a method in Python which will remove any given character from a String.
+Q2). Write a program in Python to count occurrence of a given character in a String?
+Q2). Write a program in Python for, In a array 1-100 multiple numbers are duplicates, how do you find it.
+Q3). Write a program in Python for, How to find all pairs in array of integers whose sum is equal to given number.
+Q4). Write a program in Python for, How to compare two array is equal in size or not.
+Q3). Write a program in Python to check if two String are Anagram.
+Q4). Write a program in Python to check a String is palindrome or not.
+Python Programming Coding Questions on Array
+Q1). Write a program in Python for, In array 1-100 numbers are stored, one number is missing how do you find it.
+Q5). Write a program in Python to find largest and smallest number in array.
+Q6). Write a program in Python to find second highest number in an integer array.
+Q7). Write a program in Python to find top two maximum number in array?
+Q8). Write a program in Python to remove duplicate elements form array.
+
+
+Python Interview Questions[2021]: Most asked in Interview
+Basic Python Interview Questions and Answers
+Q1). What is pep8 in Python? why pep8 is important?
+Ans:
+
+PEP stands for Python Enhancement Proposal. We can Spell pep8 as PEP8 or PEP-8. It is a document that provides Guideline to improve the readability of Python Code. It was written by Guido van Rossum, Barry Warsaw, and Nick Coghlan in 2001. It was prepared to provide better practices over how to write Python Code.
+
+Below you can see some guidelines given in PEP8 are
+
+Naming Conventions means How to Choose names of variables, functions, classes, packages, Method, Constant, Module. According to pep8, the name should be meaningful and easy to understand by anyone. Name should reflect why this variable, methods, or constants for. Suppose we have to write a method which will add two number so it should be either sumOfTwo or sum instead of any general name like a or b.
+Maximum Length of the line suggested by PEP8 should be limited to 79 characters. If more then you can break the line and move to next line.
+Indentation is a very important concept of Python that is given by PEP8. Python follows indentation instead of curly brackets to separate block of codes from others.
+Q2). What is the Python programming language?
+Ans:
+
+Python is an interpreted, object-oriented, and high-level programming language. It was first released in 1991 and created by Guido van Rossum.
+
+Python programming language is very simple and provides small code for small and large-scale projects. Python supports multiple programming paradigms. It includes structured (particularly, procedural), object-oriented, imperative, and functional programming, and also it is dynamically typed and garbage-collected.
+
+The latest version of python is 3.8.5 that was recently released in July 2020.
+
+Q3). Write some features of Python.
+Ans: 
+
+Some Important features of python are written below:
+
+Open Source and Free
+Easy to Code
+Support for GUI
+Object-Oriented Approach
+High-Level Language
+Integrated Language
+Easily Portable
+Dynamically Typed Language
+Cross-platform Language
+Dynamic Memory Allocation
+large Array of Library
+Highly Dynamic nature
+Q4). Is Python compiled or interpreted language?
+Ans:
+
+Python is an Interpreted Language As per Python Official Document.
+
+Let’s understand why?, Interpreter is itself a program that executes other programs. In Python, the Source code written by the developer is not executed directly on the machine but first, it compiled by python compiler, and then it executes.
+
+ 
+
+Now the thing is why it differs from compiled language?
+
+It is because In compiled language first program compiles and then generates a byte code file and this byte code again executes for generating output. If there is any syntax error or compile-time error in the compiled language it will show as a compiler error.
+
+But in Python there is no any compilation error it will generate runtime exceptions.
+
+So you can say that python is interpreted language.
+
+Q5). What are the namespaces in Python? Why are they used?
+Ans:
+
+In Python, a namespace is a system that ensures that all the names should unique in a program and it can be used without any conflict.
+
+We can also say that namespace as a container where objects are mapped with a name to avoid the confusion when the same name is available in different namespaces.
+
+Python implements namespaces as dictionaries. And In Python strings, lists, functions, etc are objects and that objects are mapped with variables as key-value pairs. Variables are treated as a Key/name and Objects are treated as a Value.
+
+Why It is important?
+
+To uniquely identify all names/variables inside a program namespace is important.
+
+It differentiates the names/variables based on its scope.
+
+Local Scope: Mean’s scope of a name is up to methods or functions. We can’t access it outside the methods or functions.
+Global Scope: Name/Variable of this scope is available to your entire projects.
+Module Level Scope: Name/Variable of this scope is available within your module.
+Q6). What is Scope Resolution in Python (LEGB Rule)?
+Ans:
+
+In Python, the scope defines the hierarchical order. In this hierarchical order, namespaces have to search for the mappings of name-to-object(variables). It defines the accessibility of variables. This means where a variable can be accessed as well as it also defines the lifetime of a variable.
+
+ 
+
+Below is a example to demonstrate it
+
+x = "outer variable"
+def display():
+    pi = "inner variable"
+    print(x)   
+display()
+print(x)
+ 
+Output:
+
+inner variable
+
+outer variable
+
+ 
+
+In the above program, you can see we have initialized two variables with the same name ‘x’. But here its namespace scope is different. As one x= “inner variable” scope is only for inside display() method and another x = “outer variable” is in outer namespace and its has global scope.
+
+ 
+
+Scope resolution via LEGB rule
+
+Local(L): Scope of variable/name is only inside function/class means variable is defined in function.
+
+Enclosed(E): One function is enclosed within another function and inner function can access the outer variable.
+
+Global(G): Global scope is uppermost level and can be accessed from everywhere inside the project.
+
+Built-in(B): This is reserved names in Python built-in modules.
+
+Q7). How is memory managed in Python Programming Language?
+Ans:
+
+In Python, there is a private heap that involved in memory management. All the Python data structures and objects are located in this private heap. The Python Memory Manager manages this private heap and deals with dynamic memory management. Reallocation, Sharing, and Segmentation is a part of Dynamic Memory Allocations.
+
+Python has a garbage collector that recycles all unused memory so that it can be available for new objects.
+
+Python heap manages an integer object differently than strings, and tuples. It is because integer requires some specific storage but for in case of string and tuples, it is dynamic.
+
+Q8). Explain python modules? Name some commonly used built-in modules in Python?
+Ans:
+
+In Python, a module is a file that contains Python code with the extension .py. Python code of a module can be any functions, classes, and variables.
+
+Let’s see an example of a module
+
+File: module1.py
+
+def print_fun():
+    print ("hello")
+    return
+ 
+Use above module in the main file
+
+File: main.py
+
+import module1
+module1.print_fun()
+ 
+Output:
+
+hello
+
+9). What are local variables and global variables in Python?
+In Python, there are two types of variables local variable and global variable.
+
+ 
+
+Local Variable:
+
+If the variable is declared inside the body of method or function then that variable is accessible inside that method/function only. This variable is known as Local Variable.
+
+For an example:
+
+def func():
+    x = "local variable"
+    print(x)
+func()
+ 
+Output: 
+
+local variable
+
+def func1():
+    x = "local variable"
+func1()
+print(x) 
+Output:
+
+NameError: name ‘x’ is not defined
+
+ 
+
+Global Variable:
+
+If the variable is declared in global scope or outside the method, is known as a global variable. Global variable can be accessed from anywhere inside the projects.
+
+For example:
+
+x = "global variable"
+def func():         
+    print(x)
+func() 
+Output: global variable
+
+x = "global variable"
+def func():         
+    print(x)
+func()
+print(x) 
+Output:
+
+global variable
+
+global variable
+
+10).What are decorators in Python? Why is it used?
+In Python, decorators are used to add some functionality to existing code. At compile time, one part of the program modifies the other part of the program.
+
+We need decorators in Python when we want to add some new functionality without modifying the existing code. There is a case when you want to use some existing method with some modification now instead of modifying the existing method we can create a new method and then after adding some functionality in new method then call the existing method. This is known as decorators in Python.
+
+def sub(a,b):
+    print(a-b)
+def mod_sub(func):
+    def inner(a,b):
+        if a<b:
+            a,b = b,a
+        return func(a,b)
+    return inner
+sub = mod_sub(sub)
+sub(3,5) 
+Output:
+
+2
+
+ 
+
+In the above example you can see the there are one existing method sub that will subtract two numbers and print result. Here is a limitation like if we pass parameter like 5,3 then it will return 2 but if we pass parameter then it will return -2.
+
+Now later we want  in both cases it should return 2 not -2 .So to achieve it we have added new method mod_sub(func) without modifying existing sub(a,b) method. 
+
+11). How do you write comments in python?
+There are two types of comments in Python
+
+a). Single Line Comment (#)
+
+#this is a single-line comment in Python
+
+ 
+
+b). Multiline Comment(“””)
+
+“””This is multiple line comment in Python And it works fine”””
+
+Example:
+
+#this is single line comment
+
+"""This is muliple line comment
+like this all line are in print(hello)
+comment"""
+ 
+12). Which data types are supported in Python.
+There are following built-in data types in Python
+
+Boolean: bool
+
+Numeric: int, float, complex
+
+Text: str
+
+Sequence: list, tuple, range
+
+Mapping: dict
+
+Set: set, frozenset
+
+Binary: bytes
+
+13). What are tuples in Python?
+In Python, a tuple is an ordered and unchangeable collection. It is a type of data type, and it is written with round/small brackets.
+
+tuple starts from index 0.
+
+Example:
+
+tuple_name = ("monu", "sonu", "payal")
+print(tuple_name[0]) 
+Output:
+
+monu
+
+14). What is the difference between lists and tuples.
+Lists:
+
+List are changeable mean mutable
+Iteration of the item are slower
+Tuple:
+
+a tuple is unchangeable means immutable
+Faster iteration of items
+15). What are Python's dictionaries, and how to access the value of the dictionary.
+In Python, A dictionary is an unordered, changeable, and indexed collection.
+
+Example:
+
+stud_dict = {
+  "name": "astha",
+  "class": "7",
+  "age":12
+}
+print(stud_dict) 
+Output:
+
+{‘age’: 12, ‘name’: ‘astha’, ‘class’: ‘7’}
+
+ 
+
+Accessing values in a dictionary
+
+We can access the value of a dictionary by its key name.
+
+Suppose we want to access the name from the above dictionary stud_dict
+
+x = stud_dict["name"]
+print(x) 
+Output:
+
+astha
+
+16). How do you get a list of all the keys in a dictionary?
+In python there is a keys() method that will return the all keys of dictionary in the form of list.
+
+Example:
+
+stud_dict = {
+  "name": "Astha",
+  "class": "7",
+  "age":12
+}
+print(stud_dict.keys())
+ 
+Output:
+
+dict_keys([‘age’, ‘class’, ‘name’])
+
+17). What is type conversion in Python?
+In Python, type conversion is a process of converting the value of one data type to another data type. For example, suppose we have some value having datatype integer, and we can convert it into a string using type conversion.
+
+There are two types of type conversion in Python
+
+1). Implicit Type Conversion
+
+2). Explicit Type Conversion
+
+1). Implicit Type Conversion
+
+In Implicit type, the conversion is automatically done by Python. This process does not require any extra additional process. Basically this conversion is done from lower data type (integer) to the higher data type (float).
+
+For example:
+
+intNum = 123
+floNum = 1.23
+sum = intNum + floNum
+print("datatype of intNum:",type(intNum ))
+print("datatype of floNum:",type(floNum))
+print("Value of sum:",sum)
+print("datatype of sum:",type(sum))
+ 
+Output: 
+
+datatype of intNum: <class ‘int’>                                                                                             
+datatype of floNum: <class ‘float’>                                                                                           
+Value of sum: 124.23                                                                                                          
+datatype of sum: <class ‘float’>
+Here you can see that there is not any conflict in adding float and integer. It means  here internally python is converted integer into float and added into float value.
+ 
+Explicit Type Conversion:
+
+Python has int(), float(), str(), etc functions to perform explicit type conversion. Basically in some case python does not able to do type conversion implicitly, so in that case we have to perform type conversion by using given functions.
+
+For example when we try to add integer value with string then we will get typeerror so in this case we need to perform Explicit Type Conversion.
+
+Example:
+
+intNum = 123
+strNum = "123"
+print("Data type of intNum:",type(intNum))
+print("Data type of strNum before Type Conversion:",type(strNum))
+strNum = int(strNum)
+print("Data type of strNum after Type Conversion:",type(strNum))
+sum = intNum + strNum
+print("Sum = ", sum)
+print("Data type of the sum:",type(sum))
+ 
+Output:
+
+Data type of intNum: <class ‘int’>                                                                                            
+Data type of strNum before Type Conversion: <class ‘str’>                                                                     
+Data type of num_str after Type Conversion: <class ‘int’>                                                                     
+Sum =  246                                                                                                                    
+Data type of the sum: <class ‘int’>    
+18). What is lambda in Python?
+A lambda function is a small anonymous function that can take any number of arguments but can only have one expression.
+
+Example 1:
+
+x = lambda y : y + 20
+print(x(5)) 
+Output: 
+
+25
+
+Above is an example of how to use a lambda function. Here lambda function adds 20 to the argument and prints the result.
+
+Example 2 :
+
+x = lambda a, b, c : a + b + c
+print(x(1, 2, 3)) 
+Output:
+
+6
+
+19). How can the ternary operators be used in Python?
+Every programming language has a ternary operator concept. Basically ternary operator is a short form of conditional if-else operator.
+
+Syntax of Ternary Operator is:
+
+[on_true] if [expression] else [on_false].
+
+ 
+
+1). Using python if-else statement –
+
+x, y = 1, 2
+if x>y:
+    print("x")
+else:
+    print("y") 
+Output:
+
+y
+
+2). Using ternary operator
+
+x, y = 1, 2
+print("x" if x> y else "y") 
+Output:
+
+y
+
+20). How does break, continue and pass work?
+Break: Break statement is used to terminate the loop on some particular condition in which it is present. After termination of the loop, the next statement will be executed.
+
+Example:
+
+for l in 'Quescol':
+   if l == 'e':
+      break
+   print (l) 
+Output:
+
+Q
+
+u
+
+In the above example you can see that when condition satisfied for loop has been  terminated and program has printed only two character.
+
+ 
+
+Continue: Continue statement is used to continue the loop only by skipping for some particular condition in which it is present. It won’t terminate the loop.
+
+Example:
+
+for l in 'Quescol':
+   if l == 'e':
+      continue
+   print(l) 
+Output: 
+
+Q                                                                                                                             
+u                                                                                                                             
+s                                                                                                                             
+c                                                                                                                             
+o                                                                                                                             
+l 
+ 
+Pass: In Python, a pass is a statement that is used to do nothing. We can write pass inside a loop or if statement. It is useful when we want a syntax that does nothing.
+
+for l in 'Quescol':
+   if l == 'e':
+      pass
+   print(l) 
+Output:
+
+Q                                                                                                                             
+u                                                                                                                             
+e                                                                                                                             
+s                                                                                                                             
+c                                                                                                                             
+o                                                                                                                             
+l  
+21). What is a map function in Python?
+In Python, the map() function is used when we want to perform some particular operation on each element of a given an iterable (list, tuple, etc.). You can understand it like suppose in a tuple or list we have five elements, and we want to add 2 in each element of that list or tuple, then we will use map function that will do this task very quickly.
+
+Lets See an example:
+
+arr = [10,20,30,40,50]
+def add(num):
+    return num+2
+result = list(map(add,arr))
+print(result) 
+Output: 
+
+[12, 22, 32, 42, 52]
+
+ 
+
+Here you can see that in the above program using map function we have added 2 in each element of list.
+
+22). What is a enumerate function in Python?
+In Python, Enumerate() function adds a counter to each element of a list and returns the enumerate object for each element. We can use this enumerate object for loops to access the list elements by their index value.
+
+enumerate(iterable, start=0)
+
+ 
+
+To understand it see below example:
+
+Example 1:
+
+name = ['ram', 'mohan', 'niraj']
+for item in enumerate(name):
+  print(item)
+ 
+Output:
+
+(0, ‘ram’)                                                                                                                    
+(1, ‘mohan’)                                                                                                                  
+(2, ‘niraj’)
+ 
+Example 2:
+name = ['ram', 'mohan', 'niraj']
+for index, item in enumerate(name):
+  print(item) 
+Output:
+ram                                                                                                                           
+mohan                                                                                                                         
+niraj  
+ 
+In the above first examples you can see that item is printed with index value. Means enumerate() has added index value with item of list.
+23). What is slicing in Python?
+In Python, Slicing is a process to get a sub-string from the given string. We can do slicing of a String from start to end.
+
+Slicing can be done by two ways in Python.
+
+a). slice() Constructor
+
+b). Extending Indexing
+
+ 
+
+slice() Constructor :
+
+slice constructor takes one and three parameters like
+
+slice(stop) and slice(start, stop, step)
+
+ 
+
+Example:
+
+string = 'Quescol'
+s1 = slice(4)
+s2 = slice(1,4,2)
+print(string[s1])
+print(string[s2]) 
+Output:
+
+Ques                                                                                                                          
+us   
+24). What is pickling and unpickling?
+Pickling is a process to convert an object into character streams. And unpickling is the inverse of that means converting character streams into objects.
+
+Pickling is mostly used to save the state of objects and reuse it later without losing any instance-specific data.
+
+25). What are split(), sub(), and subn() methods in Python?
+In Python, split(), sub(), and subn() are a regular expression modules.
+
+Spilt(): this is used to “split” a given string into a list on the basis of a given expression
+
+Sub(): This is used to replace all substrings with a given different string where the regex pattern matches.
+
+Subn(): This is very similar to sub() that replaces all substrings with a given different string where the regex pattern matches, But also it returns the count of replacement.
+
+26). What is the usage of help() and dir() function in Python.
+help() – help() is a built-in function in Python that returns the Python documentation of a particular object, method, attributes, etc.
+
+dir() – dir() is also a built-in function in Python that returns a list of attributes for the object passed in as an argument. And If we do not pass any parameter, then it will return a list of names in the current local namespace.
+
+27). What is a shallow copy and deep copy in Python
+Shallow copy:- In shallow copy when we copy one object into another object, then whatever we perform any changes in the second object, it will also reflect into the first object. To perform shallow copy we have “copy()” function.
+
+Example :
+
+import copy
+li1 = [1, 2, [3,5], 4]
+li2 = copy.copy(li1)
+li2[2][0] = 5
+print(li2)
+print(li1) 
+Output: 
+
+[1, 2, [5, 5], 4]                                                                                                             
+[1, 2, [5, 5], 4]  
+ 
+deep copy () :- In a deep copy, when we copy one object into another object, whatever we perform, any changes in the second object will not reflect into the first object. To perform deep copy we have a “deepcopy ()” function.
+
+Example:
+
+import copy
+li1 = [1, 2, [3,5], 4]
+li2 = copy.deepcopy(li1)
+li2[2][0] = 5
+print(li2)
+print(li1) 
+Output:
+
+[1, 2, [5, 5], 4]                                                                                                             
+[1, 2, [3, 5], 4]        
+Array & List
+Q1). What is the difference between Python Arrays and lists?
+Array: Array can contain the same data types elements.
+
+Array need to be declared first before using it
+
+List: List can contain different data types element
+
+Q2). How can you concatenate lists in Python?
+There are different ways to concatenate python lists:
+
+a). using Concatenation Operator(+)
+
+We can easily concatenate two lists using + operator
+
+Example:
+
+list1 = [0, 1, 2, 3, 4]
+list2 = [5, 6, 7, 8, 9]
+listConcatenate = list1 + list2
+print(listConcatenate) 
+Output:
+
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+
+ 
+
+b). Using loop and append()
+
+Using for loop and append() method we can concatenate lists.
+
+Example:
+
+list1 = [0, 1, 2, 3, 4]
+list2 = [5, 6, 7, 8, 9]
+for element in list2:
+    list1.append(element)
+print(list1) 
+Output:
+
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+ 
+
+c). Using extend() built in method
+
+list1 = [0, 1, 2, 3, 4]
+list2 = [5, 6, 7, 8, 9]
+list1.extend(list2)
+print(list1) 
+Output:
+
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+
+3). Is python NumPy array better than lists?
+Yes, the NumPy array is better than lists because it consumes less memory. it is very convenient to use and is faster than the python list.
+
+Q4). How to return a list of keys from a dictionary?
+In Python, there is a key function that will help to find keys from the dictionary, and after finding keys, we can typecast into a list to get all keys in the list form.
+
+For example:
+
+dict = {1:'Geeks', 2:'for', 3:'geeks'}
+print(list(dict.keys())) 
+Output:
+
+[1, 2, 3]    
+
+Q5). How to reverse a list in Python?
+Python has a reverse() function that can reverse a list in a one go.
+
+For Example:
+
+list1 = [1, 2, 3, 4, 5];
+list1.reverse();
+print (list1) 
+Output:
+
+[5, 4, 3, 2, 1]
+
+Q6). How to check if a value is available in a list in Python?
+Using ‘in’ operator we can check a value is present in List or not. It returns true if present otherwise false and that would be checked by if statement.
+
+Lets see an example for better understanding
+
+list1 = [1, 2, 3, 4, 5];
+if 1 in list1:
+    print('1 is present in our list') 
+Output:
+
+1 is present in our list   
+
+Q7). What is the difference between append and extend?
+In Python both append and extend are used to add a new element in the list. But there is some small difference between it.
+
+Append: append can only concatenate one element at the end of the list at a time in Python.
+
+Example:
+
+list = [1,2,3,4]
+list.append(5)
+print(list) 
+Output:
+
+[1, 2, 3, 4, 5] 
+
+ 
+
+Extend: extend() is used to concatenate multiple elements at the end of the python list in one go. Means using extend, we can add two lists in a single go.
+
+Example:
+
+list1 = [1,2,3,4]
+list2 = [5,6,7,8]
+list1.extend(list2)
+print(list1) 
+Output:
+
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+String
+Q1). What is String interpolation in Python, and how it works.
+In Python, String Interpolation is a process in which we can substitute the value in the middle or anywhere of the string with some dynamic value.
+
+For example, We want to say good morning with users name so we can write it as “Good Morning {Name of user}”, Here at the place of “Name of user”, we can replace it with some dynamic user name value.
+
+In Python, we can perform string interpolation in different ways like %-formatting, sys.format(), stringtemplate and f-strings.
+
+ 
+
+One Example of f String
+
+name = "prakash"
+age = 24
+print(f'my name is {name} and age is {age}') 
+Output:
+
+my name is prakash and age is 24
+
+Q2). Explain the multiplication of string with number in Python?
+Basically, in Python, when we multiply integer value to the string using multiplication operator, then in output, we will get string that repeat for times of that integer value. And when we will try to use multiplication operator between strings, and then we will get an error.
+
+For example:
+
+str1 = 'kumar'
+print(str1*3) 
+Output:
+
+kumarkumarkumar 
+
+Q3). How do you uppercase and lowercase a string in Python?
+Python has two methods:
+
+upper() and lower() to convert a string into upper and lower cases.
+
+upper() method:
+
+the upper() method converts all lowercase characters of a string into uppercase characters.
+
+Example:
+
+string = "converted into uppercase"
+print(string.upper()) 
+Output:
+
+CONVERTED INTO UPPERCASE     
+
+ 
+
+lower() method:
+
+lower () method converts all uppercase characters of a string into lowercase characters.
+
+Example:
+
+string = "Converted Into lowercase "
+print(string.lower ()) 
+Output:
+
+converted into lowercase 
+
+Q4). How can you remove all whitespace from a string in Python?
+There are several methods in Python to deal with white spaces and also every methods have there own uses as per requirements.
+
+Some methods are:
+
+ 
+
+strip() method: strip() method is used to remove only leading and trailing space of any string.
+
+Example:
+
+str1 = ' hello world '
+str1.strip()
+print(str1) 
+Output:
+
+hello world
+
+ 
+
+Replace() Method:
+
+Replace method is used to replace some value with other values. To remove white space from everywhere in the string, we can replace ” “white space with “” no space.
+
+Example:
+
+str1 = "this is white space removal program"
+print (str1.replace(" ", "")) 
+Output:
+
+thisiswhitespaceremovalprogram 
+
+Q5). How to check a string contains only numbers?
+Python has a isdigit() method to check if any string contains any number or not.
+
+Lets see an example to understand it:
+
+string1 = '123456789'
+string2 = 'quescol123'
+if string1.isdigit():
+    print ("String1 contains only numbers")
+else:
+    print ("String1 doesn't contains only numbers")
+if string2.isdigit():
+    print ("String2 contains only numbers ")
+else:
+    print ("String2 doesn't contains only numbers ") 
+Output:
+
+string1 contains only numbers
+string2 doesn’t contains only numbers
+Python OOPs interview Questions
+Q1). How to create class Python?
+Using the keyword class, we can create class in Python. Let’s create a class with the name Dog to understand it.
+
+class Dog:
+    name=" shadow" 
+Q2). How you can create an empty class in Python?
+To create an empty class in Python, we can use pass keywords. Let’s see below example
+
+Example:
+
+class Dog:
+    pass 
+It is a class that has nothing. Pass is a keyword that is used when we want nothing in class or method for sometimes. And later, as per requirement, we can update pass with some logical code.
+
+But when we write only class name then it will give an error
+
+class Dog: 
+Error output:
+
+ File “main.py”, line 2                                                                                                        
+                                                                                                                                
+              ^                                                                                                                 
+SyntaxError: unexpected EOF while parsing   
+Q3). What is the difference between instance, static, and class methods in Python?
+Instance method: In python instance method is very basic method that can be access only by the instance of that class.
+
+ 
+
+Example:
+
+class Dog:
+    def __init__ (self,name,age):
+        self.name=name
+        self.age=age
+    def details(self):
+        print(f'name of dog is {self.name} and age is {self.age}')
+d = Dog("shadow", 9)
+d.details() 
+Output:
+
+name of dog is shadow and age is 9
+
+ 
+
+Class Method: It is a method that can be accessed by both class names and an object of the class. There are two ways to define a class method.
+
+a). using classmethod(function)
+
+b). using @classmethod annotation
+
+ 
+
+Example:
+
+class Dog:
+    name = 'Dog'
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    @classmethod
+    def info(cls):
+        return cls.name
+print(Dog.info())
+ 
+Output:
+
+Dog 
+
+ 
+
+Static Method: It is a method that can only be accessible by that class name. To define method as a static method python has a annotation @staticmethod that we can use.
+
+class Dog:
+    name = 'student'
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b     
+    @staticmethod
+    def info():
+        return "This is a Dog class"
+print(Dog.info()) 
+Output:
+
+This is a student class 
+
+Q4). Explain Inheritance in Python with an example.
+Inheritance represents the relationship between the classes. Inheritance allows a child class to inherit the property and behavior of its parent class. It is a very important concept, and we use it when we want some common functionality for everyone but some specific functionality to some special one like for manager or admin.
+
+So we can write common functionality in Parent class and some special functionality in child class that will inherit the parent class so that along with special functionality, common functionality will also be available to a special one.
+
+Example:
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def show(self):
+    print("Person fullname is", self.firstname, self.lastname)
+
+class Employee(Person):
+  def __init__(self, fname, lname, company):
+    super().__init__(fname, lname)
+    self.company = company
+
+  def show(self):
+    print("Employee fullname is", self.firstname, self.lastname, "and working in ", self.company)
+
+p = Person("Prakash", "Kumar")
+p.show()
+e = Employee("Prakash", "Kumar", "Cognizant")
+e.show() 
+Output:
+
+Person fullname is Prakash Kumar
+Employee fullname is Prakash Kumar and working in Cognizant
+
+Q5). What are the types of inheritance in Python?
+There are five types of inheritance in Python
+
+Single
+Multiple
+Hierarchical
+Multi-level
+Hybrid
+Q6). Does Python support multiple inheritance?
+Yes, Python supports multiple inheritance
+
+Q7). How does a class inherit from another class in Python
+To inherit parent class, just pass the parent class name in the child class parameter. Let’s see the below example to understand it.
+
+Example:
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def show(self):
+    print("Person fullname is", self.firstname, self.lastname)
+
+class Employee(Person):
+  def __init__(self, fname, lname, company):
+    super().__init__(fname, lname)
+    self.company = company
+
+  def show(self):
+    print("Employee fullname is", self.firstname, self.lastname, "and working in ", self.company)
+
+p = Person("Prakash", "Kumar")
+p.show()
+e = Employee("Prakash", "Kumar", "Cognizant")
+e.show() 
+Output:
+
+Person fullname is Prakash Kumar
+Employee fullname is Prakash Kumar and working in Cognizant
+
+Also prepare these Python Programs:
+Write a program to reverse an integer in Python.
+Write a program in Python to check whether an integer is Armstrong number or not.
+Python Program to check a given number is Prime number or not.
+Write a program in Python to print the Fibonacci series using iterative method.
+Write a program in Python to print the Fibonacci series using recursive method.
+Also prepare these Java Pattern Programs:
+Pyramid Pattern Program In Java
+Diamond Pattern Program In Java
+Pascal's Triangle Program in Java
+Floyd's Triangle Program in Java
+Rhombus Pattern Program In Java
+Rectangle Pattern Program In Java
+Some Tricky Star Hyphen Combination Pattern Program in Java
+Also prepare these Java Programs:
+Java Program to print Fibonacci series using recursive method
+Palindrome program in Java for number using Recursive method
+Java program to check a given is an Armstrong
+Java program to add two numbers without using addition operator
+How to remove a character from a string in java
+Write a program in Java to count occurrence of a given character in a String.
+Java program to find largest and smallest number in an array
+Java program to print first duplicate number in an array of 1-100
+Java Program to remove duplicate elements from an array
+Program to count repeated elements in an array java
+'''
